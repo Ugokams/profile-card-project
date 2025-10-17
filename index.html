@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    
+    <figure class="avatar-container">
+      <img src="images/nelson.jpg" alt="User Avatar" data-testid="test-user-avatar" />
+    </figure>
+
+    <header>
+      <h2 data-testid="test-user-name">Nelson Sylvanus</h2>
+      <h4 id="role">Frontend Developer</h4>
+    </header>
+
+
+    <p data-testid="test-user-bio">
+      Passionate learner. Exploring frontend and backend development, focused on solving real-world problems with technology.
+    </p>
+
+    <section class="flex-box">
+      <h4>Current Time (ms): </h3>
+      <p data-testid="test-user-time"></p>
+    </section>
+
+
+    <nav data-testid="test-user-social-links">
+      <ul id="social-links-list">
+        <li><a href="https://github.com/Ugokams" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/nelson-sylvanus-36756b141" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://x.com/SylvanusNe75846" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter"><i class="fab fa-x-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+
+<section data-testid="test-user-hobbies">
+  <h3>Hobbies:</h3>
+  <ul>
+    <li>Reading, </li>
+    <li>Coding, </li>
+    <li>Drawing</li>
+  </ul>
+</section>
+
+<section data-testid="test-user-dislikes">
+  <h3>Dislikes:</h3>
+  <ul>
+    <li>Procrastination, </li>
+    <li>Noise, </li>
+    <li>Disorganization</li>
+  </ul>
+</section>
+
+
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
