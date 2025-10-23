@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h2 id="form-header">Contact Form</h2>
+            <form id="contactForm" novalidate>            
+            <p class="success" id="successMessage" data-testid="test-contact-success">Message successfully sent</p>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" data-testid="test-contact-name" placeholder="Enter your name" required>
+            <p class="error" id="error-name" data-testid="test-contact-error-name">Full name is required.</p>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" data-testid="test-contact-email" placeholder="Enter your email" required>
+            <p class="error" id="error-email" data-testid="test-contact-error-email">A valid email address is required</p>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" data-testid="test-contact-subject" placeholder="Enter subject" required>
+            <p class="error" id="error-subject" data-testid="test-contact-error-subject">Subject cannot be empty.</p>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" data-testid="test-contact-message" placeholder="Write your message..." required></textarea>
+            <p class="error" id="error-message" data-testid="test-contact-error-message">Message must be at least 10 characters long.</p>
+
+            <button type="submit" data-testid="test-contact-button">Submit Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
