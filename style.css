@@ -147,12 +147,12 @@ section[data-testid="test-user-dislikes"] li {
   }
 }
 
-main{
+section{
   background-color: #112240;
   box-sizing: border-box;
   border: 1px solid #233554;
   border-radius: 10px;
-  
+  padding: 40px;
   width: 100%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);      
 }
